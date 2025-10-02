@@ -3,7 +3,7 @@ on: [push]
 jobs:
   Test-Job:
     runs-on:
-      - codebuild-Case175928201000066GitHubActionsRunnerDockerServer-${{ github.run_id }}-${{ github.run_attempt }}
+      - codebuild-Case175928201000066RunnerDockerServer-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - uses: actions/checkout@v3
       - name: Run local Docker container action
